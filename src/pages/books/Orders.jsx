@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useAuth } from '../../context/AuthContext';
-import { useGetOrderQuery } from '../../redux/features/orders/ordersAPI';
+import { useGetOrderQuery } from '../../redux/features/orders/ordersApi';
 
 const Orders = () => {
     const {currentUser} = useAuth()
