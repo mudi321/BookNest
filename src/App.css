@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+
+body {
+  cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/pusheen-the-cat-animated/pusheen-the-cat-animated-cursor-1-32x32.png), default!important 
+  
+}
+
+
+
+
+
+/* Swipper */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    background: #F9F9F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ /* .swiper-button-prev {
+   @apply bg-gold p-5 rounded-full z-50 shadow-md ;
+ }
+ .swiper-button-next{
+    @apply bg-gold p-5 rounded-full z-50 shadow-md
+ } */
+
+ .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 20px !important;
+    color: #3E362E;
+    
+ }
+
+ /* Buttons */
+ .btn-primary {
+    @apply bg-primary text-offWhite px-12 py-2 rounded-md text-base font-secondary font-bold hover:bg-tertiary hover:text-matteBlack transition-all duration-200 ;
+ 
+
+   position: relative;
+   color: #F9F9F3;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 8px 12px;
+   overflow: hidden;
+   z-index: 1;
+   cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/pusheen-the-cat-animated/pusheen-the-cat-animated-pointer-32x32.png), pointer!important
+ }
+ 
+ .btn-primary::before {
+   content: "";
+   position: absolute;
+   bottom: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 200%;
+   height: 200%;
+   border-radius: 50%;
+   background-color: #e4c590;
+   transition: 500ms ease;
+   z-index: -1;
+ }
+ 
+ .btn-primary .text {
+   transition: 250ms ease;
+ }
+ 
+ .btn-primary .text-2 {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   min-width: max-content;
+   color: hsla(240, 4%, 6%, 1);
+ }
+ 
+ .btn-primary:is(:hover, :focus-visible)::before {
+   bottom: -50%;
+ }
+ 
+ .btn-primary:is(:hover, :focus-visible) .text-1 {
+   transform: translateY(-40px);
+ }
+ 
+ .btn-primary:is(:hover, :focus-visible) .text-2 {
+   top: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+
+
+ .btn-secondary {
+   
+   @apply bg-primary text-offWhite px-12 py-2 rounded-md text-base font-secondary font-bold hover:bg-gold hover:text-matteBlack transition-all duration-500;
+ 
+   
+   position: relative;
+   color: #F9F9F3;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   
+   overflow: hidden;
+   z-index: 1;
+   cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/pusheen-the-cat-animated/pusheen-the-cat-animated-pointer-32x32.png), pointer!important
+ }
+ 
+ .btn-secondary::before {
+   content: "";
+   position: absolute;
+   bottom: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 200%;
+   height: 200%;
+   border-radius: 50%;
+   background-color: #e4c590;
+   transition: 500ms ease;
+   z-index: -1;
+ }
+ 
+ .btn-secondary .text {
+   transition: 250ms ease;
+ }
+ 
+ .btn-secondary .text-2 {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   min-width: max-content;
+   color: hsla(240, 4%, 6%, 1);
+ }
+ 
+ .btn-secondary:is(:hover, :focus-visible)::before {
+   bottom: -50%;
+ }
+ 
+ .btn-secondary:is(:hover, :focus-visible) .text-1 {
+   transform: translateY(-40px);
+ }
+ 
+ .btn-secondary:is(:hover, :focus-visible) .text-2 {
+   top: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+.html{
+   scroll-behavior: smooth;
+}
