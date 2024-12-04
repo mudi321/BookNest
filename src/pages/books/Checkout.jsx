@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { useForm } from "react-hook-form"
 import { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
-import { useCreateOrderMutation } from '../../redux/features/orders/ordersAPI';
+import { useCreateOrderMutation } from '../../redux/features/orders/ordersApi';
 import Swal from 'sweetalert2'
 
 const Checkout = () => {
