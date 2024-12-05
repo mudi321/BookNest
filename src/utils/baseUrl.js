@@ -1,5 +1,5 @@
 const getBaseUrl = () => {
-    return "http://localhost:5000"
+    return "https://booknest-backend-green.vercel.app/"
 }
 
 export default getBaseUrl
